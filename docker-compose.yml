@@ -10,6 +10,8 @@ services:
       - db:/data/postgres
     ports:
       - "5332:5432"
+    network_mode: "host"
+
     networks:
       - db
     restart: unless-stopped

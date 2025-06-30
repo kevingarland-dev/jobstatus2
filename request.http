@@ -38,5 +38,19 @@ Content-Type: application/json
 ###
 GET http://localhost:8080/api/comments
 
+###
+POST http://localhost:8080/api/messages
+Content-Type: application/json
+
+{
+  "sender": "Emmanuel",
+  "receiver": "Project Manager",
+  "content": "I'm tired of this project."
+}
+
+###
+GET http://localhost:8080/api/messages/user/Project Manager
+
+
 
 
